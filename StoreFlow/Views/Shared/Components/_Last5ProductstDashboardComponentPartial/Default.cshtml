@@ -1,0 +1,46 @@
+﻿@model List<Product>
+
+<div class="col-md-5 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <i class="fas fa-rocket"></i>
+                Son 5 Ürün
+            </h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Ürün Adı
+                            </th>
+                            <th>
+                                Ürün Fiyatı
+                            </th>
+                            <th>
+                                Stok Sayısı
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model){
+                            <tr>
+                                <td class="py-1">
+                                    @item.ProductName
+                                </td>
+                                <td>
+                                   @item.ProductPrice
+                                </td>
+                                <td>
+                                    @item.ProductStock
+                                </td>
+                            </tr>
+                        }
+                        
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

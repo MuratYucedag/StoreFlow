@@ -1,0 +1,55 @@
+﻿@model List<TodoStatusChartViewModel>
+@using Newtonsoft.Json
+
+@{
+    var statusLabels = Model.Select(x => x.Status).ToList();
+    var statusCounts = Model.Select(x => x.Count).ToList();
+}
+
+<div class="col-md-4 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <i class="fas fa-tasks"></i> Yapılacaklar - Durum Dağılımı
+            </h4>
+            <canvas id="todo-status-chart" width="600" height="600"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const labels = @Html.Raw(JsonConvert.SerializeObject(statusLabels));
+        const counts = @Html.Raw(JsonConvert.SerializeObject(statusCounts));
+
+        const ctx = document.getElementById('todo-status-chart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Duruma Göre Yapılacaklar',
+                    data: counts,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    });
+</script>

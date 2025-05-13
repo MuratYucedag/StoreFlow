@@ -1,0 +1,45 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "CreateOrder";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Sipariş Ekleme Sayfası</h4>
+                <form class="forms-sample" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Ürün Seçiniz</label>
+                        <select asp-for="ProductId" asp-items="@ViewBag.products" class="form-control">
+                            <option value="">-- Ürün Seçiniz --</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Müşteri Seçiniz</label>
+                        <select asp-for="CustomerId" asp-items="@ViewBag.customers" class="form-control">
+                            <option value="">-- Müşteri Seçiniz --</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Sipariş Adet</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Sipariş Adedini Giriniz." asp-for="OrderCount">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Birim Fiyat Giriniz</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Birim Fiyatı Giriniz." asp-for="UnitPrice">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Toplam Fiyat Giriniz</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Toplam Fiyatı Giriniz." asp-for="TotalPrice">
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Siparişi Oluştur</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

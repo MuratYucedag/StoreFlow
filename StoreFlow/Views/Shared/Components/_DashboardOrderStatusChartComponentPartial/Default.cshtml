@@ -1,0 +1,54 @@
+﻿@model List<OrderStatusChartViewModel>
+
+@using Newtonsoft.Json
+@{
+    var statusLabels = Model.Select(x => x.Status).ToList();
+    var statusCounts = Model.Select(x => x.Count).ToList();
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <i class="fas fa-gift"></i> Sipariş Durumları
+            </h4>
+            <canvas id="orders-chart-status"></canvas>
+            <div id="orders-chart-legend-status" class="orders-chart-legend-status"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const labels = @Html.Raw(JsonConvert.SerializeObject(statusLabels));
+    const counts = @Html.Raw(JsonConvert.SerializeObject(statusCounts));
+
+    const ctx = document.getElementById('orders-chart-status').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Sipariş Durumları',
+                data: counts,
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 206, 86, 0.6)'
+                ],
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+</script>

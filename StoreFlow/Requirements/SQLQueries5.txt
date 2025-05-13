@@ -1,0 +1,16 @@
+﻿INSERT INTO ToDos (Description, Status) VALUES
+('Haftalık envanter kontrolü yapılacak', 0),
+('Kargo firması ile fiyat pazarlığı yapılmalı', 1),
+('Yeni ürünler için raf etiketleri bastırılacak', 0),
+('Depo düzenleme planı hazırlanacak', 1),
+('Stok takip sistemine ürünler girilecek', 0),
+('Günlük satış raporu incelenecek', 1),
+('Tedarikçi ile görüşme yapılmalı', 1),
+('Kampanya ürünleri listelenecek', 0),
+('Toplantı sunumu hazırlanacak', 1),
+('Eksik ürünler sipariş verilecek', 0),
+('Fiyat güncelleme tablosu kontrol edilecek', 1),
+('Yeni gelen ürünler etiketlenecek', 0),
+('Ekip içi görev dağılımı yapılacak', 1),
+('Web sitesine yeni ürün eklenmeli', 0),
+('İade gelen ürünler kontrol edilecek', 1);

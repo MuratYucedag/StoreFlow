@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadDashboardComponentPartial")
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        @await Component.InvokeAsync("_NavbarDashboardComponentPartial")
+
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            @await Component.InvokeAsync("_ThemeSettingsWrapperDashboardComponentPartial")
+
+            @await Component.InvokeAsync("_RightSidebarDashboardComponentPartial")
+
+            @await Component.InvokeAsync("_SidebarDashboardComponentPartial")
+           
+
+
+
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <!-- partial -->
+            @await Component.InvokeAsync("_StatisticsWidgetComponentPartial")
+                    
+
+                   
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+              
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/vendors/js/vendor.bundle.base.js"></script>
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/off-canvas.js"></script>
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/hoverable-collapse.js"></script>
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/misc.js"></script>
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/settings.js"></script>
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="/Melody-Premium-Bootstrap-Admin-Dashboard-Template/js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+</html>

@@ -1,0 +1,13 @@
+﻿ToList - Add - Find - Remove - Update
+Count - Min - Max - Sum - Avg
+FirstOrDefault - SaveChanges - Select - Include - Where
+Take - Skip - OrderByAsc - OrderByDesc - Any
+All - Contain - StartsWith - EndsWith - ToListAsync
+AddAsync - SaveChangesAsync - FindAsync - AddRange - AddRangeAsync
+Aggregate - Append - Prepend - Chunk - Concat
+Union - UnionBy - Group By - From - Distinct
+AsParallel - Except - ExceptBy - AllAsync - AnyAsync
+CountBy - AsNoTracking - Attach - LongCount - Last
+SkipLast - TakeLast - Reverse - First - SingleOrDefault
+DefaultIfEmpty - Intersect - Cast<T> - OfType<T> - Entry
+Join - Group Join - Asquaryble - Index - AttachRange

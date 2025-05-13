@@ -1,0 +1,39 @@
+﻿@model List<Todo>
+
+<div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+    <div class="add-items d-flex px-3 mb-0">
+    </div>
+    <div class="list-wrapper px-3">
+        <ul class="d-flex flex-column-reverse todo-list">
+
+            @foreach (var item in Model)
+            {
+                if (item.Status == true)
+                {
+                    <li>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="checkbox" type="checkbox">
+                                @item.Description
+                            </label>
+                        </div>
+                        <i class="remove fa fa-times-circle"></i>
+                    </li>
+                }
+                else
+                {
+                    <li class="completed">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="checkbox" type="checkbox" checked>
+                                @item.Description
+                            </label>
+                        </div>
+                        <i class="remove fa fa-times-circle"></i>
+                    </li>
+                }
+            }
+
+        </ul>
+    </div>
+</div>

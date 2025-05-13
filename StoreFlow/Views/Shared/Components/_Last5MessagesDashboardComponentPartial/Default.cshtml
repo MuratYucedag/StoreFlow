@@ -1,0 +1,49 @@
+﻿@model List<Message>
+
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-envelope"></i>
+                    Gelen Son 5 Mesaj
+                </h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="py-1">
+                                        <img src="@item.SenderImageUrl" alt="profile" class="img-sm rounded-circle" />
+                                    </td>
+                                    <td class="font-weight-bold">
+                                       @item.SenderNameSurname
+                                    </td>
+                                    <td>
+                                        <label class="badge badge-light badge-pill">@item.MessageTitle</label>
+                                    </td>
+                                    <td>
+                                        @item.MessageDetail
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+                            }
+                          
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

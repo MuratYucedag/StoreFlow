@@ -1,0 +1,53 @@
+﻿@model List<Todo>
+
+<div class="col-md-7 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <i class="fas fa-thumbtack"></i>
+                Yapılacaklar Listesi
+            </h4>
+            <div class="add-items d-flex">
+                <input type="text" class="form-control todo-list-input" placeholder="Bugün neye ihtiyacınız var?">
+                <button class="add btn btn-primary font-weight-bold todo-list-add-btn" id="add-task">Ekle</button>
+            </div>
+            <div class="list-wrapper">
+                <ul class="d-flex flex-column-reverse todo-list">
+                    @foreach (var item in Model)
+                    {
+
+                        @if (item.Status == true)
+                        {
+                            <li class="completed">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox" checked>
+                                        @item.Description
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox">
+                                        @item.Description
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                        }
+
+
+                    }
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

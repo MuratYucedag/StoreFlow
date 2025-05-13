@@ -1,0 +1,50 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "First5ProductList";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">İlk 5 Ürün Listesi</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ürün Adı</th>
+                                <th>Fiyat</th>
+                                <th>Kategori Adı</th>
+                                <th>Stok Sayısı</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <th>@count</th>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.ProductPrice TL</td>
+                                    <td>@item.Category.CategoryName</td>
+                                    <td>@item.ProductStock</td>
+                                    <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-outline-success">Güncelle</a></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <a href="/Product/CreateProduct/" class="btn btn-outline-primary">Yeni Ürün Girişi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

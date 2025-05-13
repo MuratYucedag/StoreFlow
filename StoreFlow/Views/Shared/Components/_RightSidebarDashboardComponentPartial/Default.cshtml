@@ -1,0 +1,17 @@
+﻿<div id="right-sidebar" class="settings-panel">
+    <i class="settings-close fa fa-times"></i>
+    <ul class="nav nav-tabs" id="setting-panel" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">Yapılacaklar Listesi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">Son Mesajlar</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="setting-content">
+        @await Component.InvokeAsync("_RightSidebarToDoListComponentPartial")
+        @await Component.InvokeAsync("_RightSidebarMessageComponentPartial")
+       
+
+    </div>
+</div>

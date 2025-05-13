@@ -1,0 +1,59 @@
+﻿@model List<Order>
+
+@{
+    ViewData["Title"] = "OrderListByStatus";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Sipariş Listesi</h3>
+                <div class="table-responsive">
+
+                    <form asp-action="OrderListByStatus" method="get">
+                        <input type="text" name="status" placeholder="Bu alana durumu giriniz..."  class="form-control"/>
+                        <button type="submit" class="btn btn-primary mt-2">Ara</button>
+                    </form>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ürün Adı</th>
+                                <th>Müşteri</th>
+                                <th>Sipariş Adet</th>
+                                <th>Birim Fiyat</th>
+                                <th>Toplam Fiyat</th>
+                                <th>Durum</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th>@item.OrderId</th>
+                                    <td>@item.ProductId</td>
+                                    <td>@item.CustomerId</td>
+                                    <td>@item.UnitPrice TL</td>
+                                    <td>@item.TotalPrice TL</td>
+                                    <td>@item.Status</td>
+                                    <td><a href="/Order/DeleteOrder/@item.OrderId" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/Order/UpdateOrder/@item.OrderId" class="btn btn-outline-success">Güncelle</a></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <a href="/Order/CreateOrder/" class="btn btn-outline-primary">Yeni Sipariş Girişi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

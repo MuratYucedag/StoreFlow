@@ -1,0 +1,90 @@
+﻿INSERT INTO Products (ProductName, ProductPrice, ProductStock, CategoryId) VALUES
+-- Elektronik
+('Bluetooth Hoparlör', 499.90, 25, 1),
+('Akıllı Saat', 1199.00, 40, 1),
+('Powerbank 10000mAh', 299.90, 60, 1),
+
+-- Bilgisayar Bileşenleri
+('Gaming Mouse', 349.90, 35, 2),
+('16GB DDR4 RAM', 899.00, 20, 2),
+('SSD 1TB NVMe', 1499.90, 15, 2),
+
+-- Telefon ve Aksesuarları
+('iPhone 14 Kılıfı', 149.90, 100, 3),
+('Ekran Koruyucu', 59.90, 150, 3),
+('Type-C Şarj Kablosu', 79.90, 90, 3),
+
+-- Ev Aletleri
+('Elektrikli Süpürge', 1999.00, 12, 4),
+('Ütü', 649.90, 25, 4),
+('Airfryer Fritöz', 1599.00, 10, 4),
+
+-- Mutfak Gereçleri
+('Granit Tava Seti', 499.00, 30, 5),
+('Bıçak Seti 6 Parça', 299.90, 45, 5),
+('Cam Kesme Tahtası', 129.90, 70, 5),
+
+-- Kırtasiye ve Ofis Ürünleri
+('Defter A5 Spiralli', 24.90, 200, 6),
+('Jel Kalem Seti', 69.90, 180, 6),
+('Ofis Koltuğu', 1899.00, 5, 6),
+
+-- Kitap ve Dergi
+('Suç ve Ceza - Dostoyevski', 89.90, 50, 7),
+('Bilim Teknik Dergisi - Mart 2025', 29.90, 80, 7),
+('Çocuk Masalları Kitabı', 39.90, 100, 7),
+
+-- Oyuncaklar ve Hobi
+('Lego City Seti', 499.00, 20, 8),
+('Kutu Oyunu - Monopoly', 399.90, 15, 8),
+('Puzzle 1000 Parça', 149.90, 30, 8),
+
+-- Kozmetik ve Kişisel Bakım
+('Yüz Temizleme Jeli', 79.90, 40, 9),
+('Parfüm 100ml', 349.90, 25, 9),
+('Güneş Kremi SPF50', 109.90, 60, 9),
+
+-- Spor ve Outdoor
+('Koşu Ayakkabısı', 899.00, 18, 10),
+('Yoga Matı', 229.90, 50, 10),
+('Kamp Lambası', 149.90, 35, 10),
+
+-- Giyim - Erkek
+('Erkek Tişört - M', 149.90, 75, 11),
+('Kot Pantolon Erkek', 249.90, 40, 11),
+
+-- Giyim - Kadın
+('Kadın Elbise - S', 199.90, 30, 12),
+('Kadın Bluz - L', 129.90, 50, 12),
+
+-- Giyim - Çocuk
+('Çocuk Sweatshirt - 6 Yaş', 99.90, 60, 13),
+('Çocuk Şapka', 49.90, 80, 13),
+
+-- Ayakkabı ve Çanta
+('Kadın Omuz Çantası', 399.00, 25, 14),
+('Spor Ayakkabı Unisex', 549.90, 30, 14),
+
+-- Oto Aksesuarları
+('Araç Telefon Tutucu', 89.90, 70, 15),
+('Oto Koltuk Kılıfı', 349.90, 15, 15),
+
+-- Yapı Market ve Bahçe
+('Bahçe Sulama Tabancası', 99.90, 45, 16),
+('Matkap Seti', 699.00, 12, 16),
+
+-- Ev Dekorasyon
+('LED Gece Lambası', 79.90, 50, 17),
+('Duvar Saati Dekoratif', 129.90, 35, 17),
+
+-- Anne ve Bebek Ürünleri
+('Bebek Bezi No:3', 199.90, 80, 18),
+('Emzik Seti', 39.90, 100, 18),
+
+-- Evcil Hayvan Ürünleri
+('Kedi Maması 2Kg', 149.90, 40, 19),
+('Köpek Oyuncağı', 59.90, 60, 19),
+
+-- Yiyecek ve İçecek
+('Filtre Kahve 250gr', 89.90, 70, 20),
+('Çikolata Karışık 500gr', 79.90, 90, 20);

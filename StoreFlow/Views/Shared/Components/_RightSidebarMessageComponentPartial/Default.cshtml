@@ -1,0 +1,23 @@
+﻿@model List<Message>
+
+<div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+    <div class="d-flex align-items-center justify-content-between border-bottom">
+        <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Mesajlar</p>
+        <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">Tümünü Gör</small>
+    </div>
+    <ul class="chat-list">
+
+        @foreach(var item in Model)
+        {
+            <li class="list">
+                <div class="profile"><img src="@item.SenderImageUrl" alt="image"><span class="online"></span></div>
+                <div class="info">
+                    <p>@item.SenderNameSurname</p>
+                    <p>@item.MessageTitle</p>
+                </div>
+                <small class="text-muted my-auto">@item.Datetime.ToShortDateString()</small>
+            </li>
+        }
+       
+    </ul>
+</div>

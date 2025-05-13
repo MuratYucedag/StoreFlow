@@ -1,0 +1,61 @@
+﻿INSERT INTO Categories (CategoryName, CategoryStatus) VALUES
+('Elektronik', 1),
+('Bilgisayar Bileşenleri', 1),
+('Telefon ve Aksesuarları', 1),
+('Ev Aletleri', 1),
+('Mutfak Gereçleri', 1),
+('Kırtasiye ve Ofis Ürünleri', 1),
+('Kitap ve Dergi', 1),
+('Oyuncaklar ve Hobi', 1),
+('Kozmetik ve Kişisel Bakım', 1),
+('Spor ve Outdoor', 1),
+('Giyim - Erkek', 1),
+('Giyim - Kadın', 1),
+('Giyim - Çocuk', 1),
+('Ayakkabı ve Çanta', 1),
+('Oto Aksesuarları', 1),
+('Yapı Market ve Bahçe', 1),
+('Ev Dekorasyon', 1),
+('Anne ve Bebek Ürünleri', 1),
+('Evcil Hayvan Ürünleri', 1),
+('Yiyecek ve İçecek', 1);
+
+
+----------------------
+
+INSERT INTO Customers (CustomerName, CustomerSurname, CustomerCity, CustomerDistrict, CustomerBalance) VALUES
+('Ahmet', 'Yılmaz', 'İstanbul', 'Kadıköy', 1250.50),
+('Mehmet', 'Kaya', 'Ankara', 'Çankaya', 980.00),
+('Ayşe', 'Demir', 'İzmir', 'Bornova', 1450.75),
+('Fatma', 'Çelik', 'Bursa', 'Nilüfer', 620.25),
+('Ali', 'Şahin', 'Antalya', 'Muratpaşa', 875.90),
+('Zeynep', 'Aydın', 'Konya', 'Selçuklu', 1340.60),
+('Mustafa', 'Öztürk', 'Adana', 'Seyhan', 740.00),
+('Elif', 'Kara', 'Gaziantep', 'Şahinbey', 1550.20),
+('Murat', 'Yıldız', 'Kayseri', 'Kocasinan', 1110.10),
+('Emine', 'Doğan', 'Samsun', 'Atakum', 970.30),
+('Hasan', 'Koç', 'Eskişehir', 'Tepebaşı', 660.40),
+('Hatice', 'Arslan', 'Mersin', 'Yenişehir', 1290.80),
+('Yusuf', 'Taş', 'Diyarbakır', 'Bağlar', 890.50),
+('Rabia', 'Güneş', 'Trabzon', 'Ortahisar', 750.60),
+('Ahmet', 'Bozkurt', 'Malatya', 'Yeşilyurt', 910.00),
+('Merve', 'Kılıç', 'Erzurum', 'Yakutiye', 870.70),
+('Okan', 'Aslan', 'Denizli', 'Pamukkale', 1015.25),
+('Sevgi', 'Yavuz', 'Manisa', 'Şehzadeler', 955.45),
+('Burak', 'Balcı', 'Balıkesir', 'Altıeylül', 1345.00),
+('Nurgül', 'Kaplan', 'Kocaeli', 'İzmit', 1190.10),
+('Taha', 'Ergin', 'Sakarya', 'Serdivan', 980.80),
+('Melike', 'Polat', 'Aydın', 'Efeler', 1025.00),
+('Can', 'Acar', 'Hatay', 'Antakya', 1080.30),
+('Buse', 'Sezer', 'Ordu', 'Altınordu', 950.60),
+('Tolga', 'Çakır', 'Elazığ', 'Merkez', 875.20),
+('Ezgi', 'Bayraktar', 'Çanakkale', 'Merkez', 1115.90),
+('Kerem', 'Türkmen', 'Isparta', 'Merkez', 990.00),
+('Hilal', 'İnce', 'Rize', 'Merkez', 930.75),
+('Cem', 'Durmaz', 'Şanlıurfa', 'Haliliye', 1060.40),
+('Gamze', 'Sağlam', 'Kütahya', 'Merkez', 1015.10);
+
+
+------------------------------
+
+

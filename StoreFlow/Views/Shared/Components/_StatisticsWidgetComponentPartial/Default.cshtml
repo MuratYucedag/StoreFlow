@@ -1,0 +1,252 @@
+﻿<div class="main-panel">
+    <div class="content-wrapper">
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Kategori Sayısı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.categoryCount</h2>
+                                    
+                                </div>
+                                <small class="text-gray">Toplamda @ViewBag.categoryCount kategori bulunuyor.</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-chart-pie text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">En Yüksek Ürün Fiyatı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.productMaxPrice TL</h2>   
+                                </div>
+                                <small class="text-gray">Bu Ürün: @ViewBag.productMaxPriceProductName</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-shopping-cart text-danger icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">En Düşük Ürün Fiyatı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.productMinPrice TL</h2>
+                                   
+                                </div>
+                                <small class="text-gray">Bu Ürün: @ViewBag.productMinPriceProductName</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-bell text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Toplam Ürün Stok Sayısı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.totalSumProductStock</h2>
+
+                                </div>
+                                <small class="text-gray">Stokta @ViewBag.totalSumProductStock ürün bulunuyor.</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-comment text-warning icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Ortalama Ürün Stok Sayısı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.averageProductStock</h2>
+                                </div>
+                                <small class="text-gray">Toplam Ürün Stok Sayısı / Ürün Adet Değeri</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-cubes text-primary icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Ortalama Ürün Fiyatı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.averageProductPrice TL</h2>
+
+                                </div>
+                                <small class="text-gray">1 Adet ürün için ortalama fiyat</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-desktop text-secondary icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">1000 TL'den Yüksek Fiyatlı Ürün Sayısı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.biggerPriceThen1000ProductCount</h2>
+
+                                </div>
+                                <small class="text-gray">Fiyatı 1000 TL'den Yüksek Ürün Sayısı.</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-clock text-success icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">4 Nolu ID'ye Ait Ürün Adı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.getIDIs4ProductName</h2>
+                                </div>
+                                <small class="text-gray">ID Değeri 4 Olan Ürün Adı</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-coffee text-dark icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Stoğu 50-100 Arasındaki Ürün</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.stockCountBigger50AndSmaller100ProductCount</h2>
+
+                                </div>
+                                <small class="text-gray">Stok Sayısı 50'den büyük ve 100'den küçük ürün</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-filter text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">1000 TL'den Yüksek Fiyatlı Ürün Sayısı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.biggerPriceThen1000ProductCount</h2>
+
+                                </div>
+                                <small class="text-gray">Fiyatı 1000 TL'den Yüksek Ürün Sayısı.</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-clock text-success icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">4 Nolu ID'ye Ait Ürün Adı</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.getIDIs4ProductName</h2>
+                                </div>
+                                <small class="text-gray">ID Değeri 4 Olan Ürün Adı</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-coffee text-dark icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Stoğu 50-100 Arasındaki Ürün</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.stockCountBigger50AndSmaller100ProductCount</h2>
+
+                                </div>
+                                <small class="text-gray">Stok Sayısı 50'den büyük ve 100'den küçük ürün</small>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-filter text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:../partials/_footer.html -->
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="far fa-heart text-danger"></i></span>
+        </div>
+    </footer>
+    <!-- partial -->
+</div>
